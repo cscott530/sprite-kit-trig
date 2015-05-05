@@ -30,6 +30,7 @@
 		83EB9BE61AF86A8F0052F068 /* Collision.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD71AF86A8F0052F068 /* Collision.wav */; };
 		83EB9BE71AF86A8F0052F068 /* Hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD81AF86A8F0052F068 /* Hit.wav */; };
 		83EB9BE81AF86A8F0052F068 /* Shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD91AF86A8F0052F068 /* Shoot.wav */; };
+		83EB9BEA1AF86F570052F068 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EB9BE91AF86F570052F068 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		83EB9BD71AF86A8F0052F068 /* Collision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Collision.wav; sourceTree = "<group>"; };
 		83EB9BD81AF86A8F0052F068 /* Hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit.wav; sourceTree = "<group>"; };
 		83EB9BD91AF86A8F0052F068 /* Shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shoot.wav; sourceTree = "<group>"; };
+		83EB9BE91AF86F570052F068 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB9BEA1AF86F570052F068 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +96,7 @@
 		83EB9B961AF8663A0052F068 = {
 			isa = PBXGroup;
 			children = (
+				83EB9BE91AF86F570052F068 /* CoreMotion.framework */,
 				83EB9BA11AF8663A0052F068 /* TrigTutorial */,
 				83EB9BBB1AF8663B0052F068 /* TrigTutorialTests */,
 				83EB9BA01AF8663A0052F068 /* Products */,
