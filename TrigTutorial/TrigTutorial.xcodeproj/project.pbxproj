@@ -15,6 +15,21 @@
 		83EB9BB01AF8663A0052F068 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BAF1AF8663A0052F068 /* Images.xcassets */; };
 		83EB9BB31AF8663A0052F068 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BB11AF8663A0052F068 /* LaunchScreen.xib */; };
 		83EB9BBF1AF8663B0052F068 /* TrigTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB9BBE1AF8663B0052F068 /* TrigTutorialTests.swift */; };
+		83EB9BDA1AF86A8F0052F068 /* Asteroid-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCA1AF86A8F0052F068 /* Asteroid-hd.png */; };
+		83EB9BDB1AF86A8F0052F068 /* Asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCB1AF86A8F0052F068 /* Asteroid.png */; };
+		83EB9BDC1AF86A8F0052F068 /* Cannon-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCC1AF86A8F0052F068 /* Cannon-hd.png */; };
+		83EB9BDD1AF86A8F0052F068 /* Cannon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCD1AF86A8F0052F068 /* Cannon.png */; };
+		83EB9BDE1AF86A8F0052F068 /* CannonMissile-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCE1AF86A8F0052F068 /* CannonMissile-hd.png */; };
+		83EB9BDF1AF86A8F0052F068 /* CannonMissile.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BCF1AF86A8F0052F068 /* CannonMissile.png */; };
+		83EB9BE01AF86A8F0052F068 /* Player-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD01AF86A8F0052F068 /* Player-hd.png */; };
+		83EB9BE11AF86A8F0052F068 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD11AF86A8F0052F068 /* Player.png */; };
+		83EB9BE21AF86A8F0052F068 /* PlayerMissile-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD21AF86A8F0052F068 /* PlayerMissile-hd.png */; };
+		83EB9BE31AF86A8F0052F068 /* PlayerMissile.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD31AF86A8F0052F068 /* PlayerMissile.png */; };
+		83EB9BE41AF86A8F0052F068 /* Turret-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD41AF86A8F0052F068 /* Turret-hd.png */; };
+		83EB9BE51AF86A8F0052F068 /* Turret.png in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD51AF86A8F0052F068 /* Turret.png */; };
+		83EB9BE61AF86A8F0052F068 /* Collision.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD71AF86A8F0052F068 /* Collision.wav */; };
+		83EB9BE71AF86A8F0052F068 /* Hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD81AF86A8F0052F068 /* Hit.wav */; };
+		83EB9BE81AF86A8F0052F068 /* Shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83EB9BD91AF86A8F0052F068 /* Shoot.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +55,21 @@
 		83EB9BB81AF8663B0052F068 /* TrigTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EB9BBD1AF8663B0052F068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83EB9BBE1AF8663B0052F068 /* TrigTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigTutorialTests.swift; sourceTree = "<group>"; };
+		83EB9BCA1AF86A8F0052F068 /* Asteroid-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Asteroid-hd.png"; sourceTree = "<group>"; };
+		83EB9BCB1AF86A8F0052F068 /* Asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid.png; sourceTree = "<group>"; };
+		83EB9BCC1AF86A8F0052F068 /* Cannon-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cannon-hd.png"; sourceTree = "<group>"; };
+		83EB9BCD1AF86A8F0052F068 /* Cannon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cannon.png; sourceTree = "<group>"; };
+		83EB9BCE1AF86A8F0052F068 /* CannonMissile-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CannonMissile-hd.png"; sourceTree = "<group>"; };
+		83EB9BCF1AF86A8F0052F068 /* CannonMissile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CannonMissile.png; sourceTree = "<group>"; };
+		83EB9BD01AF86A8F0052F068 /* Player-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player-hd.png"; sourceTree = "<group>"; };
+		83EB9BD11AF86A8F0052F068 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
+		83EB9BD21AF86A8F0052F068 /* PlayerMissile-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayerMissile-hd.png"; sourceTree = "<group>"; };
+		83EB9BD31AF86A8F0052F068 /* PlayerMissile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerMissile.png; sourceTree = "<group>"; };
+		83EB9BD41AF86A8F0052F068 /* Turret-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Turret-hd.png"; sourceTree = "<group>"; };
+		83EB9BD51AF86A8F0052F068 /* Turret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Turret.png; sourceTree = "<group>"; };
+		83EB9BD71AF86A8F0052F068 /* Collision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Collision.wav; sourceTree = "<group>"; };
+		83EB9BD81AF86A8F0052F068 /* Hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit.wav; sourceTree = "<group>"; };
+		83EB9BD91AF86A8F0052F068 /* Shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shoot.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +118,7 @@
 				83EB9BAC1AF8663A0052F068 /* Main.storyboard */,
 				83EB9BAF1AF8663A0052F068 /* Images.xcassets */,
 				83EB9BB11AF8663A0052F068 /* LaunchScreen.xib */,
+				83EB9BC81AF86A8F0052F068 /* Art */,
 				83EB9BA21AF8663A0052F068 /* Supporting Files */,
 			);
 			path = TrigTutorial;
@@ -116,6 +147,44 @@
 				83EB9BBD1AF8663B0052F068 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83EB9BC81AF86A8F0052F068 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				83EB9BC91AF86A8F0052F068 /* Images */,
+				83EB9BD61AF86A8F0052F068 /* Sounds */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		83EB9BC91AF86A8F0052F068 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				83EB9BCA1AF86A8F0052F068 /* Asteroid-hd.png */,
+				83EB9BCB1AF86A8F0052F068 /* Asteroid.png */,
+				83EB9BCC1AF86A8F0052F068 /* Cannon-hd.png */,
+				83EB9BCD1AF86A8F0052F068 /* Cannon.png */,
+				83EB9BCE1AF86A8F0052F068 /* CannonMissile-hd.png */,
+				83EB9BCF1AF86A8F0052F068 /* CannonMissile.png */,
+				83EB9BD01AF86A8F0052F068 /* Player-hd.png */,
+				83EB9BD11AF86A8F0052F068 /* Player.png */,
+				83EB9BD21AF86A8F0052F068 /* PlayerMissile-hd.png */,
+				83EB9BD31AF86A8F0052F068 /* PlayerMissile.png */,
+				83EB9BD41AF86A8F0052F068 /* Turret-hd.png */,
+				83EB9BD51AF86A8F0052F068 /* Turret.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		83EB9BD61AF86A8F0052F068 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				83EB9BD71AF86A8F0052F068 /* Collision.wav */,
+				83EB9BD81AF86A8F0052F068 /* Hit.wav */,
+				83EB9BD91AF86A8F0052F068 /* Shoot.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +267,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EB9BE71AF86A8F0052F068 /* Hit.wav in Resources */,
 				83EB9BB31AF8663A0052F068 /* LaunchScreen.xib in Resources */,
 				83EB9BB01AF8663A0052F068 /* Images.xcassets in Resources */,
+				83EB9BE11AF86A8F0052F068 /* Player.png in Resources */,
+				83EB9BE51AF86A8F0052F068 /* Turret.png in Resources */,
+				83EB9BE01AF86A8F0052F068 /* Player-hd.png in Resources */,
+				83EB9BE41AF86A8F0052F068 /* Turret-hd.png in Resources */,
+				83EB9BDD1AF86A8F0052F068 /* Cannon.png in Resources */,
 				83EB9BA71AF8663A0052F068 /* GameScene.sks in Resources */,
+				83EB9BDC1AF86A8F0052F068 /* Cannon-hd.png in Resources */,
+				83EB9BDF1AF86A8F0052F068 /* CannonMissile.png in Resources */,
+				83EB9BDA1AF86A8F0052F068 /* Asteroid-hd.png in Resources */,
+				83EB9BE21AF86A8F0052F068 /* PlayerMissile-hd.png in Resources */,
+				83EB9BDB1AF86A8F0052F068 /* Asteroid.png in Resources */,
+				83EB9BE81AF86A8F0052F068 /* Shoot.wav in Resources */,
+				83EB9BE31AF86A8F0052F068 /* PlayerMissile.png in Resources */,
 				83EB9BAE1AF8663A0052F068 /* Main.storyboard in Resources */,
+				83EB9BDE1AF86A8F0052F068 /* CannonMissile-hd.png in Resources */,
+				83EB9BE61AF86A8F0052F068 /* Collision.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
