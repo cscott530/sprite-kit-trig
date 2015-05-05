@@ -9,6 +9,10 @@
 import SpriteKit
 import CoreMotion
 
+let MaxPlayerAcceleration: CGFloat = 400
+let MaxPlayerSpeed: CGFloat = 200
+let MaximumDifferential = CFTimeInterval(1.0 / 30)
+
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "Player")
@@ -16,6 +20,10 @@ class GameScene: SKScene {
     
     var accelerometerX: UIAccelerationValue = 0
     var accelerometerY: UIAccelerationValue = 0
+    var playerAcceleration = CGVector(dx: 0, dy: 0)
+    var playerVelocity = CGVector(dx: 0, dy: 0)
+    
+    var lastTime: CFTimeInterval = 0.0
     
     deinit {
         self.stopMonitoringAcceleration()
@@ -33,7 +41,10 @@ class GameScene: SKScene {
     }
     
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        let differential = max(currentTime - lastTime, MaximumDifferential)
+        lastTime = currentTime
+        updatePlayerAccelerationFromMotionManager()
+        updatePlayer(differential)
     }
     
     //Moving the Player
@@ -41,9 +52,28 @@ class GameScene: SKScene {
         if let acceleration = motionManager.accelerometerData?.acceleration {
             let factor = 0.75
             
-            accelerometerX = acceleration.x * factor + accelerometerX * (1 - FilterFactor)
-            accelerometerY = acceleration.y * factor + accelerometerY * (1 - FilterFactor)
+            accelerometerX = acceleration.x * factor + accelerometerX * (1 - factor)
+            accelerometerY = acceleration.y * factor + accelerometerY * (1 - factor)
+            
+            playerAcceleration.dx = CGFloat(accelerometerY) * -MaxPlayerAcceleration
+            playerAcceleration.dy = CGFloat(accelerometerX) * MaxPlayerAcceleration
         }
+    }
+    
+    func updatePlayer(dt: CFTimeInterval) {
+        playerVelocity.dx = playerVelocity.dx + playerAcceleration.dx * CGFloat(dt)
+        playerVelocity.dy = playerVelocity.dy + playerAcceleration.dy * CGFloat(dt)
+        
+        playerVelocity.dx = max(-MaxPlayerSpeed, min(MaxPlayerSpeed, playerVelocity.dx))
+        playerVelocity.dy = max(-MaxPlayerSpeed, min(MaxPlayerSpeed, playerVelocity.dy))
+        
+        var newX = player.position.x + (playerVelocity.dx * CGFloat(dt))
+        var newY = player.position.y + (playerVelocity.dy * CGFloat(dt))
+        
+        newX = max(0, min(newX, size.width))
+        newY = max(0, min(newY, size.height))
+        
+        player.position = CGPointMake(newX, newY)
     }
     
     //Accelerometer
