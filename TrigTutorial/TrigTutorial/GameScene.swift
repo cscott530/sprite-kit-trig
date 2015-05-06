@@ -74,6 +74,9 @@ class GameScene: SKScene {
         newY = max(0, min(newY, size.height))
         
         player.position = CGPointMake(newX, newY)
+        
+        let angle = atan2(playerVelocity.dy, playerVelocity.dx)
+        player.zRotation = angle - 90
     }
     
     //Accelerometer
