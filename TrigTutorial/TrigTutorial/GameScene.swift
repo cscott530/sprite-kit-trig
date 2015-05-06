@@ -73,8 +73,32 @@ class GameScene: SKScene {
         var newX = player.position.x + (playerVelocity.dx * CGFloat(dt))
         var newY = player.position.y + (playerVelocity.dy * CGFloat(dt))
         
-        newX = max(0, min(newX, size.width))
-        newY = max(0, min(newY, size.height))
+        var collidedWithVertical = true
+        if newX < 0 {
+            newX = 0
+        } else if newX > size.width {
+            newX = size.width
+        } else {
+            collidedWithVertical = false
+        }
+        
+        var collidedWithHorizontal = true
+        if newY < 0 {
+            newY = 0
+        } else if newY > size.height {
+            newY = size.height
+        } else {
+            collidedWithHorizontal = false
+        }
+        
+        if collidedWithHorizontal {
+            playerVelocity.dy = playerVelocity.dy * -1
+            playerAcceleration.dy = playerAcceleration.dy * -1
+        }
+        if collidedWithVertical {
+            playerVelocity.dx = playerVelocity.dx * -1
+            playerAcceleration.dx = playerAcceleration.dx * -1
+        }
         
         player.position = CGPointMake(newX, newY)
         
