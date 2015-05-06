@@ -12,10 +12,10 @@ import CoreMotion
 let MaxPlayerAcceleration: CGFloat = 400
 let MaxPlayerSpeed: CGFloat = 200
 let MaximumDifferential = CFTimeInterval(1.0 / 30)
-let PI = CGFloat(M_PI)
-let degreesToRadians = PI / 180
-let radiansToDegrees = 180 / PI
-
+let Pi = CGFloat(M_PI)
+let DegreesToRadians = Pi / 180
+let RadiansToDegrees = 180 / Pi
+let BorderCollisionDamping: CGFloat = 0.4
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "Player")
@@ -92,18 +92,18 @@ class GameScene: SKScene {
         }
         
         if collidedWithHorizontal {
-            playerVelocity.dy = playerVelocity.dy * -1
-            playerAcceleration.dy = playerAcceleration.dy * -1
+            playerVelocity.dy = playerVelocity.dy * -1 * BorderCollisionDamping
+            playerAcceleration.dy = playerAcceleration.dy * -1 * BorderCollisionDamping
         }
         if collidedWithVertical {
-            playerVelocity.dx = playerVelocity.dx * -1
-            playerAcceleration.dx = playerAcceleration.dx * -1
+            playerVelocity.dx = playerVelocity.dx * -1 * BorderCollisionDamping
+            playerAcceleration.dx = playerAcceleration.dx * -1 * BorderCollisionDamping
         }
         
         player.position = CGPointMake(newX, newY)
         
         let angle = atan2(playerVelocity.dy, playerVelocity.dx)
-        player.zRotation = angle - (90 * degreesToRadians)
+        player.zRotation = angle - (90 * DegreesToRadians)
     }
     
     //Accelerometer
