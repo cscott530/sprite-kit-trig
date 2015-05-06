@@ -61,8 +61,8 @@ class GameScene: SKScene {
     }
     
     func updatePlayer(dt: CFTimeInterval) {
-        playerVelocity.dx = playerVelocity.dx + playerAcceleration.dx * CGFloat(dt)
-        playerVelocity.dy = playerVelocity.dy + playerAcceleration.dy * CGFloat(dt)
+        playerVelocity.dx = playerVelocity.dx - playerAcceleration.dx * CGFloat(dt)
+        playerVelocity.dy = playerVelocity.dy - playerAcceleration.dy * CGFloat(dt)
         
         playerVelocity.dx = max(-MaxPlayerSpeed, min(MaxPlayerSpeed, playerVelocity.dx))
         playerVelocity.dy = max(-MaxPlayerSpeed, min(MaxPlayerSpeed, playerVelocity.dy))
