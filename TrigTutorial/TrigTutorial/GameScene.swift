@@ -16,6 +16,7 @@ let Pi = CGFloat(M_PI)
 let DegreesToRadians = Pi / 180
 let RadiansToDegrees = 180 / Pi
 let BorderCollisionDamping: CGFloat = 0.4
+let RotationThreshold = CGFloat(40)
 class GameScene: SKScene {
     
     let player = SKSpriteNode(imageNamed: "Player")
@@ -102,8 +103,12 @@ class GameScene: SKScene {
         
         player.position = CGPointMake(newX, newY)
         
-        let angle = atan2(playerVelocity.dy, playerVelocity.dx)
-        player.zRotation = angle - (90 * DegreesToRadians)
+        let trueSpeed = sqrt(pow(playerVelocity.dx, 2) + pow(playerVelocity.dy, 2))
+        if (trueSpeed > RotationThreshold) {
+            let angle = atan2(playerVelocity.dy, playerVelocity.dx)
+            player.zRotation = angle - (90 * DegreesToRadians)
+        }
+        
     }
     
     //Accelerometer
